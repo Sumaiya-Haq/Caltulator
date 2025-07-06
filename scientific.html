@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casio fx-991ES Plus Style</title>
+  <style>
+    body {
+      margin: 0;
+      background: #dcdcdc;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calculator {
+      background-color: #333;
+      border-radius: 20px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    }
+
+    .brand {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .display {
+      background-color: #c7f0d8;
+      height: 40px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 18px;
+      color: #000;
+      text-align: right;
+      box-shadow: inset 0 0 3px #666;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 5px;
+    }
+
+    .button {
+      background-color: #f2f2f2;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      text-align: center;
+      cursor: default;
+      color: #000;
+    }
+
+    .button.special {
+      background-color: #ffc107;
+    }
+
+    .button.equals {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .button.operation {
+      background-color: #17a2b8;
+      color: white;
+    }
+
+    .button:active {
+      transform: scale(0.95);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="brand">CASIO fx-991ES PLUS</div>
+    <div class="display">0</div>
+    <div class="button-grid">
+      <button class="button special">SHIFT</button>
+      <button class="button special">ALPHA</button>
+      <button class="button operation">MODE</button>
+      <button class="button operation">ON</button>
+      <button class="button operation">AC</button>
+      <button class="button operation">DEL</button>
+
+      <button class="button">sin</button>
+      <button class="button">cos</button>
+      <button class="button">tan</button>
+      <button class="button">(</button>
+      <button class="button">)</button>
+      <button class="button">x!</button>
+
+      <button class="button">7</button>
+      <button class="button">8</button>
+      <button class="button">9</button>
+      <button class="button operation">÷</button>
+      <button class="button">log</button>
+      <button class="button">ln</button>
+
+      <button class="button">4</button>
+      <button class="button">5</button>
+      <button class="button">6</button>
+      <button class="button operation">×</button>
+      <button class="button">^</button>
+      <button class="button">√</button>
+
+      <button class="button">1</button>
+      <button class="button">2</button>
+      <button class="button">3</button>
+      <button class="button operation">−</button>
+      <button class="button">EXP</button>
+      <button class="button">Ans</button>
+
+      <button class="button">0</button>
+      <button class="button">.</button>
+      <button class="button">π</button>
+      <button class="button operation">+</button>
+      <button class="button equals" colspan="2">=</button>
+    </div>
+  </div>
+</body>
+</html>
